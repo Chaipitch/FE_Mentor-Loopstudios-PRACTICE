@@ -6,9 +6,9 @@ function Work() {
     <div className="Work">
       <div className="title">
         <h1>Our Creations</h1>
-        <button>
-          <a>see all</a>
-        </button>
+        <Link href="/">
+          <a className="see-all">See All</a>
+        </Link>
       </div>
 
       <div className="container">

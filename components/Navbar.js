@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);
+  const [nav, setNav] = useState(false);
+
   const changeColor = () => {
     if (window.scrollY >= 90) {
       setScroll(true);
@@ -12,7 +14,13 @@ function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  }, []);
+
+  const navToggle = () => {
+    setNav(!nav);
+  };
 
   return (
     <div className={scroll ? "Navbar Navbar-bg" : "Navbar"}>

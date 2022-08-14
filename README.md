@@ -1,5 +1,6 @@
 This is a project built to train Front-End skills from frontendmentor.
 Built using NextJS
+npm add
 
 ## Getting Started
 
