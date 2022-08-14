@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a project built to train Front-End skills from frontendmentor.
+Built using NextJS
 
 ## Getting Started
 
