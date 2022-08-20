@@ -1,7 +1,10 @@
 .About {
   margin: 4rem 1rem;
-  .abt-img {
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   h3 {
     text-transform: uppercase;
     text-align: center;
