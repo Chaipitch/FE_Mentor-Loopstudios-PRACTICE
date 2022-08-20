@@ -1,0 +1,18 @@
+.Work {
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  a {
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid black;
+  }
+}

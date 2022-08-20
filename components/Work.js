@@ -1,41 +1,24 @@
-import React from "react";
+import { useState } from "react";
 import Link from "next/dist/client/link";
+import creationsMobile from "../public/Data/creations_mobile";
+import WorkList from "./WorkList";
+import styles from "../styles/Work.module.scss";
 
 function Work() {
+  const [data, setData] = useState(creationsMobile);
+
   return (
-    <div className="Work">
+    <div className={styles.Work}>
       <div className="title">
         <h1>Our Creations</h1>
-        <Link href="/">
-          <a className="see-all">See All</a>
-        </Link>
       </div>
-
-      <div className="container">
-        <div className="card w1">
-          <h1>deep earth</h1>
-        </div>
-        <div className="card w2">
-          <h1>night arcade</h1>
-        </div>
-        <div className="card w3">
-          <h1>soccer team vr</h1>
-        </div>
-        <div className="card w4">
-          <h1>the garid</h1>
-        </div>
-        <div className="card w5">
-          <h1>from up above vr</h1>
-        </div>
-        <div className="card w6">
-          <h1>pocket borealis</h1>
-        </div>
-        <div className="card w7">
-          <h1>the curiosity</h1>
-        </div>
-        <div className="card w8">
-          <h1>make it fisheye</h1>
-        </div>
+      <div>
+        <WorkList data={data} />
+      </div>
+      <div>
+        <Link href="/">
+          <a>See All</a>
+        </Link>
       </div>
     </div>
   );

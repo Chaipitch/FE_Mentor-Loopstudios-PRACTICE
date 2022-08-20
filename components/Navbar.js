@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
 
 function Navbar() {
@@ -30,7 +29,7 @@ function Navbar() {
         </Link>
       </h3>
 
-      <ul>
+      <ul className={nav ? "nav-menu-active" : "nav-menu"}>
         <li>
           <Link className="link" href="/about">
             <a>About</a>
@@ -57,7 +56,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="Burger">
+      <div className="Burger" onClick={navToggle}>
         <div className="rectangle"></div>
         <div className="rectangle"></div>
         <div className="rectangle"></div>

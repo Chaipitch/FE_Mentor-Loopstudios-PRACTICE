@@ -1,11 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
-import styles from "../styles/Layout.module.scss";
 
 function Layout({ title, children, keywords, description }) {
   return (
-    <div className={styles.Layout}>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />

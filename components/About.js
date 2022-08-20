@@ -1,11 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import AboutImg from "../public/images/desktop/image-interactive.jpg";
+import styles from "../styles/About.module.scss";
 
 function About() {
   return (
-    <div className="About">
-      <Image src={AboutImg} width="700" height="450" alt="image" />
+    <div className={styles.About}>
+      <Image
+        className="abt-img"
+        src={AboutImg}
+        width="700"
+        height="450"
+        alt="image"
+      />
       <div className="TextArea">
         <h3>The leader in interactive VR</h3>
         <p>
